@@ -1,6 +1,18 @@
 let number=5;
-let factor=0;
-for(let i=1;i<=number;i++){
+let flag=true;
+for(let i=2;i<=number/2;i++)
+{
+    if(number%i==0)
+    {
+        flag=false;
+        break;
+    }
 }
+if(flag==true)
+{
+    console.log("prime");
+
 }
-(factor==2) ? console.log("prime number") : console.log("not a prime number");
+else{
+    console.log("Not Prime");
+}
